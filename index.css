@@ -1,0 +1,107 @@
+* {
+  font-family: arial;
+  font-size: 16px;
+  margin: 0;
+  border-radius: 10px;
+}
+body {
+  background-color: #0b0a0f;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 200vh;
+}
+header {
+  grid-column: span 4;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  p {
+    color: white;
+    font-weight: bold;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+main {
+  grid-column: span 4;
+  /* display: grid;
+    grid-template-columns: repeat(4 ,1fr); */
+  .section1 {
+    border-color: rgb(87, 86, 86);
+    /* grid-column: span 4; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+  }
+  .radar {
+    grid-column: span 2;
+    color: green;
+  }
+  .big-number {
+    display: flex;
+    flex-direction: column;
+  }
+  .number {
+    color: greenyellow;
+    font-size: x-large;
+  }
+  .words {
+    color: gray;
+  }
+  .section2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border-color: black;
+  }
+  .bigButton {
+    grid-column: span 3;
+    display: flex;
+    button {
+      background-color: rgb(50, 50, 78);
+      font-size: xx-small;
+      margin-left: 0.2rem;
+      margin-top: 0.5rem;
+    }
+  }
+  .section3 {
+    display: flex;
+    justify-content: space-between;
+    fieldset{
+       width: 25%;
+    }
+    span{
+        color: gray;
+        font-size: x-small;
+    }
+    .button-span{
+        display: flex;
+        justify-content: space-between;
+    }
+    button{
+        color: white;
+        background-color: rgb(192, 34, 23);
+        border-radius: 1px;
+        font-size: xx-small;
+        width: 3.5rem;
+    }
+    p{
+        color: white;
+        font-size: small;
+        
+    }
+    .control {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 100px;
+  animation: sync both linear reverse;
+  animation-timeline: --thumb;
+  animation-range: contain;
+}
+  }
+}
