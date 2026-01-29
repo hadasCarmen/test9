@@ -29,6 +29,9 @@ main {
   grid-column: span 4;
   /* display: grid;
     grid-template-columns: repeat(4 ,1fr); */
+    fieldset{
+        margin-bottom:1rem ;
+    }
   .section1 {
     border-color: rgb(87, 86, 86);
     /* grid-column: span 4; */
@@ -104,4 +107,16 @@ main {
   animation-range: contain;
 }
   }
+.section4{
+    display: flex;
+    justify-content: space-between;
+    background-color: black(221, 38, 77);
+    border-color:red ;
+    h3{
+        color:red ;
+    }
+}
+.section5{
+    
+}
 }
